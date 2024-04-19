@@ -1,0 +1,11 @@
+C:\Users\Nelbom\Documents\Tech_chapter_challenge\apprentice-challenge\src\InputValidation\bin\Debug\net7.0\InputValidation.deps.json
+C:\Users\Nelbom\Documents\Tech_chapter_challenge\apprentice-challenge\src\InputValidation\bin\Debug\net7.0\InputValidation.dll
+C:\Users\Nelbom\Documents\Tech_chapter_challenge\apprentice-challenge\src\InputValidation\bin\Debug\net7.0\InputValidation.pdb
+C:\Users\Nelbom\Documents\Tech_chapter_challenge\apprentice-challenge\src\InputValidation\obj\Debug\net7.0\InputValidation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nelbom\Documents\Tech_chapter_challenge\apprentice-challenge\src\InputValidation\obj\Debug\net7.0\InputValidation.AssemblyInfoInputs.cache
+C:\Users\Nelbom\Documents\Tech_chapter_challenge\apprentice-challenge\src\InputValidation\obj\Debug\net7.0\InputValidation.AssemblyInfo.cs
+C:\Users\Nelbom\Documents\Tech_chapter_challenge\apprentice-challenge\src\InputValidation\obj\Debug\net7.0\InputValidation.csproj.CoreCompileInputs.cache
+C:\Users\Nelbom\Documents\Tech_chapter_challenge\apprentice-challenge\src\InputValidation\obj\Debug\net7.0\InputValidation.dll
+C:\Users\Nelbom\Documents\Tech_chapter_challenge\apprentice-challenge\src\InputValidation\obj\Debug\net7.0\refint\InputValidation.dll
+C:\Users\Nelbom\Documents\Tech_chapter_challenge\apprentice-challenge\src\InputValidation\obj\Debug\net7.0\InputValidation.pdb
+C:\Users\Nelbom\Documents\Tech_chapter_challenge\apprentice-challenge\src\InputValidation\obj\Debug\net7.0\ref\InputValidation.dll

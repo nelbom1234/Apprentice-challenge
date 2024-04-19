@@ -1,0 +1,11 @@
+C:\Users\Nelbom\Documents\Tech_chapter_challenge\apprentice-challenge\src\HolidayCalendar\bin\Debug\net7.0\HolidayCalendar.deps.json
+C:\Users\Nelbom\Documents\Tech_chapter_challenge\apprentice-challenge\src\HolidayCalendar\bin\Debug\net7.0\HolidayCalendar.dll
+C:\Users\Nelbom\Documents\Tech_chapter_challenge\apprentice-challenge\src\HolidayCalendar\bin\Debug\net7.0\HolidayCalendar.pdb
+C:\Users\Nelbom\Documents\Tech_chapter_challenge\apprentice-challenge\src\HolidayCalendar\obj\Debug\net7.0\HolidayCalendar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nelbom\Documents\Tech_chapter_challenge\apprentice-challenge\src\HolidayCalendar\obj\Debug\net7.0\HolidayCalendar.AssemblyInfoInputs.cache
+C:\Users\Nelbom\Documents\Tech_chapter_challenge\apprentice-challenge\src\HolidayCalendar\obj\Debug\net7.0\HolidayCalendar.AssemblyInfo.cs
+C:\Users\Nelbom\Documents\Tech_chapter_challenge\apprentice-challenge\src\HolidayCalendar\obj\Debug\net7.0\HolidayCalendar.csproj.CoreCompileInputs.cache
+C:\Users\Nelbom\Documents\Tech_chapter_challenge\apprentice-challenge\src\HolidayCalendar\obj\Debug\net7.0\HolidayCalendar.dll
+C:\Users\Nelbom\Documents\Tech_chapter_challenge\apprentice-challenge\src\HolidayCalendar\obj\Debug\net7.0\refint\HolidayCalendar.dll
+C:\Users\Nelbom\Documents\Tech_chapter_challenge\apprentice-challenge\src\HolidayCalendar\obj\Debug\net7.0\HolidayCalendar.pdb
+C:\Users\Nelbom\Documents\Tech_chapter_challenge\apprentice-challenge\src\HolidayCalendar\obj\Debug\net7.0\ref\HolidayCalendar.dll

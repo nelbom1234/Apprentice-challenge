@@ -1,0 +1,11 @@
+C:\Users\Nelbom\Documents\Tech_chapter_challenge\apprentice-challenge\src\MarioPizza\bin\Debug\net7.0\MarioPizza.deps.json
+C:\Users\Nelbom\Documents\Tech_chapter_challenge\apprentice-challenge\src\MarioPizza\bin\Debug\net7.0\MarioPizza.dll
+C:\Users\Nelbom\Documents\Tech_chapter_challenge\apprentice-challenge\src\MarioPizza\bin\Debug\net7.0\MarioPizza.pdb
+C:\Users\Nelbom\Documents\Tech_chapter_challenge\apprentice-challenge\src\MarioPizza\obj\Debug\net7.0\MarioPizza.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nelbom\Documents\Tech_chapter_challenge\apprentice-challenge\src\MarioPizza\obj\Debug\net7.0\MarioPizza.AssemblyInfoInputs.cache
+C:\Users\Nelbom\Documents\Tech_chapter_challenge\apprentice-challenge\src\MarioPizza\obj\Debug\net7.0\MarioPizza.AssemblyInfo.cs
+C:\Users\Nelbom\Documents\Tech_chapter_challenge\apprentice-challenge\src\MarioPizza\obj\Debug\net7.0\MarioPizza.csproj.CoreCompileInputs.cache
+C:\Users\Nelbom\Documents\Tech_chapter_challenge\apprentice-challenge\src\MarioPizza\obj\Debug\net7.0\MarioPizza.dll
+C:\Users\Nelbom\Documents\Tech_chapter_challenge\apprentice-challenge\src\MarioPizza\obj\Debug\net7.0\refint\MarioPizza.dll
+C:\Users\Nelbom\Documents\Tech_chapter_challenge\apprentice-challenge\src\MarioPizza\obj\Debug\net7.0\MarioPizza.pdb
+C:\Users\Nelbom\Documents\Tech_chapter_challenge\apprentice-challenge\src\MarioPizza\obj\Debug\net7.0\ref\MarioPizza.dll
