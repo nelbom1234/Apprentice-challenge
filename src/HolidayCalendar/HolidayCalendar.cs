@@ -67,9 +67,8 @@ public class HolidayCalendar : IHolidayCalendar
     string result = response.Result;
 
 
-    //convert the json date to an JsonElement and then turn it into an array we can iterate on
+    //convert the json date to a JsonElement and then turn it into an array we can iterate on
     JsonElement data = JsonSerializer.Deserialize<JsonElement>(result);
-
     var dataArray = data.EnumerateArray();
 
     //Iterate on the array, checking the last value in each element if it is a holiday and if it is,
