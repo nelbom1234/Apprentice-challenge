@@ -80,7 +80,6 @@ public class HolidayCalendar : IHolidayCalendar
         bool isHoliday = bool.Parse(objProperties.Last().Value.ToString());
         if (isHoliday)
         {
-            //string holidayDate = DateTime.ParseExact(objProperties.First().Value.ToString(), "yyyy-MM-dd", CultureInfo.InvariantCulture);
             DateTime date = DateTime.ParseExact(objProperties.First().Value.ToString(), "yyyy-MM-dd", CultureInfo.InvariantCulture);
             retList.Add(date);
         }
