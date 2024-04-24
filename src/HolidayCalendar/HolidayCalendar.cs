@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections;
+using System.Globalization;
 using System.Net.Http;
 using System.Text.RegularExpressions;
+using System.Text.Json;
 
 namespace HolidayCalendar;
 public class HolidayCalendar : IHolidayCalendar
@@ -65,41 +67,27 @@ public class HolidayCalendar : IHolidayCalendar
 
     string result = response.Result;
 
-    //the result is a list but as a string. This is largely unhelpful, however each date in the result is contained in curly brackets,
-    //so we can use regular expressions to make a list that divides each date together with their other info, which we can then work with
 
-    //below is a bit of a beast of a regex, made using a regex generator to check more throughly for the contents of each result before I figured out a simpler solution
-    //It has been left in for your amusement.
-    //string pattern = "\\{\"date\":\"[0-9]{4}-[0-9]{2}-[0-9]{2}\",\"name\":\"[^\"]*\",\"nationalHoliday\":[A-Za-z]+\\}";
+    //convert the json date to an JsonElement and then turn it into an array we can iterate on
+    JsonElement data = JsonSerializer.Deserialize<JsonElement>(result);
 
-    //the better regex simply checks that there are curly braces around the expression and none inside of it
+    var dataArray = data.EnumerateArray();
 
-    string pattern = "\\{[^}]*\\}";
-    ICollection<string> intermediaryList = new List<string>();
-
-    try
+    //Iterate on the array, checking the last value in each element if it is a holiday and if it is,
+    //we convert the date in the first value to DateTime and add it to the return list
+    foreach (var obj in dataArray)
     {
-      foreach (Match match in Regex.Matches(result, pattern, RegexOptions.None, TimeSpan.FromSeconds(1))) {
-        intermediaryList.Add(match.Value);
-      }
+        var objProperties = obj.EnumerateObject();
+        
+        bool isHoliday = bool.Parse(objProperties.Last().Value.ToString());
+        if (isHoliday)
+        {
+            //string holidayDate = DateTime.ParseExact(objProperties.First().Value.ToString(), "yyyy-MM-dd", CultureInfo.InvariantCulture);
+            DateTime date = DateTime.ParseExact(objProperties.First().Value.ToString(), "yyyy-MM-dd", CultureInfo.InvariantCulture);
+            retList.Add(date);
+        }
     }
-    catch(RegexMatchTimeoutException) {}
 
-    //split each date into its parts, date, name and nationalHoliday. Checking whether it is a national holiday, 
-    //and if so converts the date to ints with which we can make the DateTime and add it to the list
-    //we have to split it at the commas instead of just substringing the entire thing because the name can be variable length, so we want to avoid that
-    //substringing like this is not the prettiest solution, but it works for our purposes
-    foreach (string date in intermediaryList) {
-      string[] info = date.Split(',');
-      if (info[2].Substring(18, 4) == "true") {
-        int year; int.TryParse(info[0].Substring(9, 4), out year);
-        int month; int.TryParse(info[0].Substring(14, 2), out month);
-        int day; int.TryParse(info[0].Substring(17, 2), out day);
-
-        retList.Add(new DateTime(year, month, day));
-      }
-
-    }
     return retList;
 
   }
