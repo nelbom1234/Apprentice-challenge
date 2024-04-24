@@ -1,4 +1,4 @@
-My solutions for the coding challenges put out by Tech Chapter for apprentice applicants at: https://github.com/techchapter/apprentice-challenge/tree/main
+My solutions for the coding challenges put out by Tech Chapter for apprentice applicants at: https://github.com/techchapter/apprentice-challenge
 
 Most of the code present has been provided from them.
 
