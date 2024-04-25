@@ -36,7 +36,6 @@ public class HolidayCalendar : IHolidayCalendar
 
     HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, url);
 
-    request.Headers.Add("accept", "application/json");
     //api authorization token
     request.Headers.Add("Authorization", "Bearer ce6d0fcf-9a9d-4124-8fc5-d6e9c8744b9b");
 
