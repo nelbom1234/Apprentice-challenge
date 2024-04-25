@@ -16,7 +16,7 @@ public class HolidayCalendar : IHolidayCalendar
 
 
     //format url with given dates
-    string url = $"https://api.sallinggroup.com/v1/holidays/is-holiday?date={year}-{month}-{day}";
+    string url = $"https://api.sallinggroup.com/v1/holidays/is-holiday?date={dateString}";
     Task<string> response = webRequest(url);
 
     string result = response.Result;
