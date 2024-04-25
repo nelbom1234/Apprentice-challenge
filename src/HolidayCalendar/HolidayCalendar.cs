@@ -11,10 +11,9 @@ public class HolidayCalendar : IHolidayCalendar
   {
     // TODO - replace the below exception with your own implementation
 
-    //split the date into its parts as strings. Pad with 0s to fit the dats scheme of the API
-    string day = date.Day.ToString().PadLeft(2, '0');
-    string month = date.Month.ToString().PadLeft(2, '0');
-    string year = date.Year.ToString().PadLeft(4, '0');
+    //convert the date to a string in our desired format for the url
+    string dateString = date.ToString("yyyy-MM-dd");
+
 
     //format url with given dates
     string url = $"https://api.sallinggroup.com/v1/holidays/is-holiday?date={year}-{month}-{day}";
@@ -50,18 +49,13 @@ public class HolidayCalendar : IHolidayCalendar
 
   public ICollection<DateTime> GetHolidays(DateTime startDate, DateTime endDate)
   {
-    string startDay = startDate.Day.ToString().PadLeft(2, '0');
-    string startMonth = startDate.Month.ToString().PadLeft(2, '0');
-    string startYear = startDate.Year.ToString().PadLeft(4, '0');
-
-    string endDay = endDate.Day.ToString().PadLeft(2, '0');
-    string endMonth = endDate.Month.ToString().PadLeft(2, '0');
-    string endYear = endDate.Year.ToString().PadLeft(4, '0');
+    string startDateString = startDate.ToString("yyyy-MM-dd");
+    string endDateString = endDate.ToString("yyyy-MM-dd");
 
     ICollection<DateTime> retList = new List<DateTime>();
 
     //format url with given dates
-    string url = $"https://api.sallinggroup.com/v1/holidays?startDate={startYear}-{startMonth}-{startDay}&endDate={endYear}-{endMonth}-{endDay}&translation=en-us";
+    string url = $"https://api.sallinggroup.com/v1/holidays?startDate={startDateString}&endDate={endDateString}&translation=en-us";
     Task<string> response = webRequest(url);
 
     string result = response.Result;
